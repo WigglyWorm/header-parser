@@ -9,7 +9,7 @@ var express = require("express"),
     app.use(cors());
     app.use(useragent.express());
     
-    var api = '/api/whoami';
+    var api = '/';
     
     app.get(api, function(req, res){
        var language = req.headers["accept-language"];
